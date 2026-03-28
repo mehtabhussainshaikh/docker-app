@@ -18,5 +18,5 @@ app.get('/health', (_, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`App listening on port ${port}`);
+  console.log(`Listening on port ${port}`);
 });
