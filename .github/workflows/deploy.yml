@@ -18,9 +18,9 @@ jobs:
           host: ${{ secrets.SERVER_HOST }}
           username: ${{ secrets.SERVER_USERNAME }}
           key: ${{ secrets.SERVER_SSH_KEY }}
-        script: |
-          cd ~/Projects/docker-app
-          git pull origin main
-          docker-compose down
-          docker-compose up -d --build
-          docker-compose logs -f
+          script: |
+            cd ~/Projects/docker-app
+            git pull origin main
+            docker-compose down
+            docker-compose up -d --build
+            docker-compose logs -f
