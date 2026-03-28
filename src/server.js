@@ -4,7 +4,7 @@ const port = 4000;
 
 app.get('/', (_, res) => {
   res.json({
-    message : "hello from docker app",
+    message : "Hello from docker app",
     timestamp : new Date().toISOString(),
     status : "Running successfully"
   })
